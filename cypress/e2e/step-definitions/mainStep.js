@@ -3,7 +3,7 @@ import { MainPage } from "../pages/mainPage";
 
 let mainPage = new MainPage();
 
-//anadir quitar las cookies
+
 
 When('I should see the navigation menu', () => {
 	mainPage.seeHboMenuHamburguer();

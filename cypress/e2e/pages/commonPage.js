@@ -6,6 +6,15 @@ export class CommonPage {
     visitLink(url) {
       cy.visit(url);
     }
+
+	acceptCookiesTest(contain, text) {
+		cy.get('body').should(contain, text);
+	  }
+
+	clickAcceptButton () {
+        cy.get('#onetrust-accept-btn-handler').click();
+      
+	  } 
     
     checkBodyText(status, text) {
       cy.get('body').should(status, text);

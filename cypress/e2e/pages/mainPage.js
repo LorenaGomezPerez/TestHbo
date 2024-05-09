@@ -1,13 +1,14 @@
 export class MainPage {
-  
-    //añadir quitar las cookies
+
+	 
+    
 
 	seeHboMenuHamburguer() {
 		cy.get('.hamburger-box').should('exist').and('be.visible');
 	  }
 
 	
-	  seeHboLogo() {
+	seeHboLogo() {
 		cy.get('.navbar-brand > img').should('exist').and('be.visible');
 	  }
 
