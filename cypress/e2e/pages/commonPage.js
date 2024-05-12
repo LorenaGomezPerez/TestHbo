@@ -8,7 +8,7 @@ export class CommonPage {
     }
 
 	acceptCookiesTest(contain, text) {
-		cy.get('body').should(contain, text);
+		cy.get('#onetrust-policy').should(contain, text);
 	  }
 
 	clickAcceptButton () {

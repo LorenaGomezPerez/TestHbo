@@ -7,14 +7,13 @@ Given("I visit {string}", (url) => {
   commonPage.visitLink(url);
 });
 
-When("I see the page should {string} the text {string}" , (contain, text) => {
+When('I check that the page {string} the text {string}' , (contain, text) => {
 	commonPage.acceptCookiesTest(contain,text);
   });
 
-  When('I should have to click on the OK button', () => {
+When('I should have to click on the OK button', () => {
 	commonPage.clickAcceptButton();
   });
-
 
 
 When("I check that the page should {string} the text {string}", (status, text) => {
