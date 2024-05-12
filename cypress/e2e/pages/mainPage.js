@@ -15,7 +15,7 @@ export class MainPage {
 	// 	cy.get('#page15534-band651898-Button651902').should('exist').and('be.visible');
 	// }
 
-	 //Scenario: Perform actions on the HBO website
+	 //Scenario: click on login button
 
 	seeSessionButton(contain,text) {
 		cy.get('.justify-content-end.d-none > .secondary-cta > .sc-pGacB').should(contain, text);

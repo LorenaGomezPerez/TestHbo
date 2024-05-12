@@ -14,7 +14,7 @@ Background: visit the page and decline the cookies
 #   Then I should see the subscription button
 
 
-Scenario: Perform actions on the HBO website
+Scenario: click on login button
     Given I see the page the button should "contain" the text "INICIA SESIÓN"
     When  I should click on the login button 
 	When  I should be redirected to the login page

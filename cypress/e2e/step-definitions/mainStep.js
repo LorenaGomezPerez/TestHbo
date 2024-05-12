@@ -16,7 +16,7 @@ let mainPage = new MainPage();
 // 	mainPage.seeSubscriptionButton();
 //  });
 
- //Scenario: Perform actions on the HBO website
+ //Scenario: click on login button
 
 When ('I see the page the button should {string} the text {string}', (contain,text) => {
 	mainPage.seeSessionButton(contain,text);
