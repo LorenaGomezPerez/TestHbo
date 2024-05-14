@@ -2,9 +2,7 @@
 export class LoginPage {
 
 
-	
-
-	// Function non parameterized
+// Function non parameterized
 	typeStandardUser() {
 	  cy.get('[data-test="username"]').should('be.empty').type('standard_user').should('have.value', 'standard_user');
 	}

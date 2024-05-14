@@ -6,15 +6,16 @@ const createBundler = require('@bahmutov/cypress-esbuild-preprocessor');
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
+	defaultCommandTimeout: 30000,
    e2e: {
-  "chromeWebSecurity": false,
-   specPattern: '**/*.feature',
-   async setupNodeEvents(on, config) {
-    await addCucumberPreprocessorPlugin(on, config);
-     on(
-       'file:preprocessor',
-       createBundler({ plugins: [createEsbuildPlugin(config)] })
-    );
+	"chromeWebSecurity": false,
+    specPattern: '**/*.feature',
+     async setupNodeEvents(on, config) {
+      await addCucumberPreprocessorPlugin(on, config);
+       on(
+         'file:preprocessor',
+         createBundler({ plugins: [createEsbuildPlugin(config)] })
+     );
    return config;
   },
 },

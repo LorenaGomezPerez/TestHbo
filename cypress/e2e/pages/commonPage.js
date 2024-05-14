@@ -7,6 +7,10 @@ export class CommonPage {
       cy.visit(url);
     }
 
+	// visitMyUrl(baseUrl){
+	// 	c.visit(baseUrl;
+	// }
+
 	acceptCookiesTest(contain, text) {
 		cy.get('#onetrust-policy').should(contain, text);
 	  }
