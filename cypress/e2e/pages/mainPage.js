@@ -68,6 +68,14 @@ export class MainPage {
 		cy.get(loginButton).click();
 	}
 
+// Podrías probar a usar funciones parametrizadas que hagan el código menos repetitivo, como por ejemplo:
+inputTextOnButtonWithDataTestId(buttonDataTestID, text) {
+	cy.get(`[data-testid="${buttonDataTestID}"]`).should('be.visible').type(text).should('have.value', text);
+
+/*
+Con esta función no solamente puedes sustituir las funciones inputLoginMail y inputLoginPassword además puedes poner el texto que quieras en cada caso, 
+voy a añadir el step relacionado en la carpeta de step-definitions fichero mainStep.js
+*/
 }
 
 
