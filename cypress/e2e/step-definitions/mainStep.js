@@ -22,7 +22,7 @@ When ('I see the page the button should {string} the text {string}', (contain,te
  	mainPage.seeSessionButton(contain,text);
   });
 
-When ('I should click on the login button', () => {
+  When ('I click on the login button', () => {
  	mainPage.clickSessionButton();
 });
 
