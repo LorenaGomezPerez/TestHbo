@@ -6,7 +6,7 @@ const createBundler = require('@bahmutov/cypress-esbuild-preprocessor');
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
-	defaultCommandTimeout: 30000,
+	defaultCommandTimeout: 10000,
    e2e: {
 	"chromeWebSecurity": false,
     specPattern: '**/*.feature',
