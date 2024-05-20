@@ -11,7 +11,7 @@ When('I check that the page {string} the text {string}' , (contain, text) => {
 	commonPage.acceptCookiesTest(contain,text);
   });
 
-When('I should have to click on the OK button', () => {
+When('I click on the OK button', () => {
 	commonPage.clickAcceptButton();
   });
 
