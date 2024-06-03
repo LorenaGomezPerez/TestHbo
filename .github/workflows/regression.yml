@@ -19,17 +19,3 @@ jobs:
       run: npm run cy:regression
       env:
         CI: true
-
-
-
-
-
-
-
-
-
-
-
-
-
-
