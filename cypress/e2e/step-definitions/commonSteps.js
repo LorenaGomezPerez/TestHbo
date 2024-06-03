@@ -1,5 +1,7 @@
 import { When, Then, Given } from "@badeball/cypress-cucumber-preprocessor";
-import { CommonPage } from "../pages/commonPage"
+import { CommonPage } from "../pages/commonPage";
+import 'cypress-mochawesome-reporter/cucumberSupport';
+
 
 let commonPage = new CommonPage();
 

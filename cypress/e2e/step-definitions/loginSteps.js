@@ -1,5 +1,6 @@
 import { When, Then, Given } from "@badeball/cypress-cucumber-preprocessor";
-import { LoginPage } from "../pages/loginPage"
+import { LoginPage } from "../pages/loginPage";
+import 'cypress-mochawesome-reporter/cucumberSupport';
 
 let loginPage = new LoginPage();
 
