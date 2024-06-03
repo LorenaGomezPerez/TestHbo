@@ -2,7 +2,7 @@ name: Cypress API Test
 on:
   workflow_dispatch:
 jobs:
-  cypress-login-test:
+  cypress-api-test:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repository
