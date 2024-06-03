@@ -7,7 +7,7 @@ Background: visit the page and decline the cookies
   Then I click on the OK button should "contain" the text "Aceptar todo"
 
 
-
+@smoke
 Scenario: visit the HBO main page
 
   When I should see the navigation menu
