@@ -11,8 +11,8 @@ export class CommonPage {
 	// 	c.visit(baseUrl;
 	// }
 
-	acceptCookiesTest(contain, text) {
-		cy.get('#onetrust-policy').should(contain, text);
+	acceptCookies(contain, text) {
+		cy.get('.onetrust-pc-dark-filter').should(contain, text);
 	  }
 
 	clickAcceptButton () {

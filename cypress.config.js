@@ -7,9 +7,14 @@ const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
 	defaultCommandTimeout: 10000,
-   e2e: {
-	"chromeWebSecurity": false,
-    specPattern: '**/*.feature',
+    e2e: {
+	
+    specPattern: ['**/*.feature', '**/apiTests/*/*.js'],
+	chromeWebSecurity: false,
+	env: {
+		snapshotOnly: true,
+		requestMode: true
+	  },
      async setupNodeEvents(on, config) {
       await addCucumberPreprocessorPlugin(on, config);
        on(
